@@ -14,5 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'Styde.net';
+});
+
+Route::get('/notas', function () {
+    return 'Listado de notas';
+});
+
+Route::get('/notas/crear', function () {
+    return 'Crear nueva nota';
+});
+
+Route::get('/cursos', function () {
+    return [
+       'cursos' => [
+           'Curso de Laravel 9',
+           'Curso de programación orientada a objetos',
+           'Curso de Git',
+       ]
+    ];
 });
