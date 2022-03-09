@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -156,11 +156,11 @@
             <div class="ad">
                 <p>
                     Esta aplicación es desarrollada en el curso
-                    <a href="https://styde.net/laravel-6">Primeros pasos con Laravel 6</a>.
+                    <a href="https://styde.net/curso-de-laravel-9/">Curso de Laravel 9</a>.
                 </p>
             </div>
             <div class="license">
-                <p>© 2019 Derechos Reservados - Styde Limited</p>
+                <p>© 2022 Derechos Reservados - Styde Limited</p>
             </div>
         </footer>
     </div>

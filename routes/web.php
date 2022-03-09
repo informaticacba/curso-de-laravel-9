@@ -17,8 +17,8 @@ Route::get('/', function () {
     return 'Styde.net';
 });
 
-Route::get('/notas', function () {
-    return 'Listado de notas';
+Route::get('/', function () {
+    return view('notes');
 });
 
 Route::get('notas/{id}', function ($id) {
@@ -26,7 +26,7 @@ Route::get('notas/{id}', function ($id) {
 });
 
 Route::get('/notas/crear', function () {
-    return 'Crear nueva nota';
+    return view('add-note');
 });
 
 Route::get('notas/{id}/editar', function ($id) {
