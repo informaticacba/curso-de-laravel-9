@@ -14,11 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return 'Styde.net';
-});
+    $notes = [
+        'Primera nota',
+        'Segunda nota',
+        'Tercera nota',
+        'Cuarta nota',
+        'Quinta nota',
+        '<script>alert("Codigo malicioso")</script>',
+    ];
 
-Route::get('/', function () {
-    return view('notes');
+    return view('notes', ['notes' => $notes]);
 });
 
 Route::get('notas/{id}', function ($id) {
